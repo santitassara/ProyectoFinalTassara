@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: blanchedalmond;
+    
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.header{
+    width: 130vh;
+    display: flex;
+}
+.infoHeader{
+    margin-left: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.dolares{
+    border: solid;
+    border-color: rgb(39, 30, 27);
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+}
+
+.dolar1{
+    position: relative;
+    margin-top: 15px;
+}
+
+.user{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+#usuario{
+    animation: wiggle 2s linear infinite;
+}
+@keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-5deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-8deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
+
+#botonSalir{
+    margin-left: 50px;
+    
+}
+
+main{
+    margin-right: 50px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap ;
+    justify-content: center;
+    width: 800px; 
+    
+}    
+
+
+.titulo1{
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 50px;
+    text-decoration: underline;
+}
+p{
+    width: 200px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-style: italic;
+}
+.cajaForm{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-color: black;
+    border-style: double;
+    
+}    
+
+.tituloTableros{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 45px;
+}
+
+.flexDiv1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ub{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 1300px;
+}
+
+.ubicar{
+    display: flex;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+.moveH3{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.move{
+    margin: 10px;
+} 
+.tituloT{
+    text-decoration: underline;
+}
+
+.precio{
+    margin-top: 20px;
+}
+
+.tmnImg{
+    height: 180px;
+    width: 240px;
+    /* margin-bottom: 100px; */
+    padding: 15px;
+}
+.tmnImg:hover{
+    border-radius: 10px;
+    border-left: 0px;
+    border-bottom: 0px;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 15px 5px 15px 5px #000000;
+    border-color: black;
+    
+}
+
+.formT{
+    margin-top: 20px;
+    
+}
+.formC{
+    margin-top: 20px;
+}
+#boton{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100px;
+    height: 30px;
+}
+
+.centro{
+    text-align: center;
+    margin-top: 20px;
+}
+.divR{
+    border-style: dotted;
+    border-radius: 20px;
+    height: 200px;
+    margin-top: 50px;
+    width: 500px;
+    /* margin-left: 400px;
+    margin-right: 400px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;*/
+}
+.swal-modal .swal-text {
+    text-align: center;
+}
+
+
+
+.form2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: dotted;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    border-radius: 10px;
+    margin-top: 200px;
+
+}
+.imgs{
+    margin-top: 20px;
+    display: flex;
+}
+img{
+    height: 50px;
+}
+
+.user1{
+    margin-bottom: 15px;
+}
+
+
+@media (max-width: 1024px){
+    .header{
+        width: 60vh;
+    }
+    .dolares{
+        font-size: 15px;
+        height: 150px;
+        justify-content: space-evenly;
+    }
+    .dolar1 p{ 
+        margin-bottom: 5px;
+        margin-top: 0px;
+    }
+    .dolar2 p{
+        margin-bottom: 5px;
+    }
+    #usuario{
+        margin-left: 20px;
+    }
+
+    .infoHeader{
+        
+        margin-left: 0;
+    }
+    .titulo1{
+        font-size: 30px;
+        margin-bottom: 0px;
+        
+    }
+    .flexDiv1{
+        margin: 10px;
+    }
+    .tmnImg{
+        height: 100px;
+        width: 120px;
+        /* margin-bottom: 100px; */
+        padding: 10px;
+    }
+    .ub{
+        
+        width: 900px;
+    }
+
+    .divR{
+        
+        width: 200px;
+    }
+    
+    body {
+        background-color: blanchedalmond;
+        
+        height: 110vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    main{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        
+    }    
+
+    .ub{
+       
+        width: 500px;
+    }
+
+    .imgs{
+        margin-top: 80px;
+    }
+    .divR{
+        width: 380px;
+    }
+    
+}
+
+@media (max-width: 1024px){
+
+    
+
+
+}

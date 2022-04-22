@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="icon" href="./img/fondochess.jpeg">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Calculador de Cuotas</title>
+    
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="dolares">
+            <div class="dolar1">
+                <h4 id="dolarOficial"></h4>
+                <p id="dolarOficialCompra"></p>
+                <p id="dolarOficialVenta"></p>
+            </div>
+            <div class="dolar2">
+                <h4 id="dolarBlue"></h4>
+                <p id="dolarBlueCompra"></p>
+                <p id="dolarBlueVenta"></p>
+
+            </div>
+        </div>
+        <div class="infoHeader">
+            <h1 class="titulo1">Calculador de cuotas</h1>
+            <div class="user">
+            
+                <h4 id="usuario"></h4>
+                <input type="button"type="button" value="Cerrar Sesión" id="botonSalir">
+            </div>
+            <div>
+                
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <form class="cajaForm">
+            <h2 class="tituloTableros">Tableros disponibles</h2>
+            <p><strong>* Para calcular cuotas , seleccione una del listado y haga click sobre la imagen del producto deseado</strong> </p>
+            <div class="ub">
+                
+                <div class="flexDiv1">
+                    <h3 class="tituloT">Tablero de Madera</h3>
+                    <img id="tableroMaderaItem" src="./img/TableroMadeira.jpg" alt="Tablero de madera" class="tmnImg ubicar">
+                    <h4 class="precio">Valor $2400</h4>
+                    
+                </div>
+                <div class="flexDiv1">
+                    <h3 class="tituloT">Tablero Vinilico</h3>
+                    <img id="tableroVinilicoItem" src="./img/Vinil tablero.jpeg" alt="Tablero vinilico" class="tmnImg ubicar">
+                    <h4 class="precio">Valor $1200</h4>
+                    <!-- <label><input type="radio" name="color" value="3" class="move" id="checkbox">    3 Cuotas</label>
+                    <label><input type="radio" name="color" value="6" class="move" id="checkbox1">    6 Cuotas</label>
+                    <label><input type="radio" name="color" value="9" class="move" id="checkbox2">    9 Cuotas</label> -->
+                </div>    
+                <div class="flexDiv1">
+                    <h3 class="tituloT">Tablero Imantado</h3>
+                    <img id="tableroImantadoItem" src="./img/TableroImantado.jpg" alt="Tablero imantado" class="tmnImg ubicar">
+                    <h4 class="precio">Valor $2000</h4>
+                    <!-- <label><input type="radio" name="color" value="1" class="move" id="checkbox">    3 Cuotas</label>
+                    <label><input type="radio" name="color" value="2" class="move" id="checkbo1">    6 Cuotas</label>
+                    <label><input type="radio" name="color" value="3" class="move" id="checkbox2">    9 Cuotas</label> -->
+                </div>    
+                <div class="flexDiv1">
+                    <h3 class="tituloT">Tablero Triple</h3>
+                    <img id="tableroTripleItem" src="./img/triplet tablero.jpeg" alt="Tablero triple" class="tmnImg ubicar">
+                    <h4 class="precio">Valor $3500</h4>
+                    <!-- <label><input type="radio" name="color" value="1" class="move" id="checkbox">    3 Cuotas</label>
+                    <label><input type="radio" name="color" value="2" class="move" id="checkbox1">    6 Cuotas</label>
+                    <label><input type="radio" name="color" value="3" class="move" id="checkbox2">    9 Cuotas</label> -->
+                </div>    
+                <div class="flexDiv1">
+                    <h3 class="tituloT">Tablero 3D</h3>
+                    <img id="tablero3DItem" src="./img/tablero3d.jpg" alt="Tablero 3D" class="tmnImg ubicar">
+                    <h4 class="precio">Valor $5000</h4>
+                    <!-- <label><input type="radio" name="color" value="1" class="move" id="checkbox">    3 Cuotas</label>
+                    <label><input type="radio" name="color" value="2" class="move" id="checkbox1">    6 Cuotas</label>
+                    <label><input type="radio" name="color" value="3" class="move" id="checkbox2">    9 Cuotas</label> -->
+                </div>  
+                
+            </div>
+            <div>
+                    <h3 class="moveH3">Seleccione cantidad de cuotas</h3>
+                    <label><input type="radio" name="color" value="3" class="move" id="checkbox"> 3 Cuotas</label>
+                    <label><input type="radio" name="color" value="6" class="move" id="checkbox1">6 Cuotas</label>
+                    <label><input type="radio" name="color" value="9" class="move" id="checkbox2">9 Cuotas*</label>
+                    <label><input type="radio" name="color" value="12" class="move" id="checkbox3">12 Cuotas*</label>
+            </div>  
+        </form>
+        <!-- <div>
+            <div class="cajaForm"> 
+                <input type="text" name="input1" id="nombre" class="formT" placeholder="Ingrese Tablero">
+                <input type="text" name="input1" id="cuotas" class="formC" placeholder="Ingrese cuotas">
+                <button id="boton">Ejecutar</button>  
+
+                <p>*Cuotas disponibles ( 3 , 6 o 9 )</p>
+            </div>
+            
+        </div> -->
+        <div id="resultado">
+
+        </div>
+    </main>
+    <footer>
+        <div class="imgs">
+            <a href="https://www.visa.com" target="_blank"><img id="img" src="./img/Visa-Logotipo-1992–2000.png" alt="logovisa"></a>
+            <a href="https://www.mastercard.com" target="_blank"><img id="img" src="./img/MasterCard_Logo.svg.png" alt="logomastercard"></a>
+            <a href="https://www.americanexpress.com" target="_blank"><img id="img" src="./img/logo-American-Express.png" alt="logoamerican"></a>
+            <a href="https://www.mercadopago.com.ar" target="_blank"><img id="img" src="./img/MERCADOPAGO.png" alt="logomercadopago"></a>
+        </div>
+    </footer>
+    <script src="./main.js"></script>
+</body>
+</html>
